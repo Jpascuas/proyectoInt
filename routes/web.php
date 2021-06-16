@@ -24,3 +24,5 @@ Route::get('imprimirVehiculos','PdfController@imprimirvehiculos')->name('imprimi
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('ingresov','ingreso_VehiculoController');
